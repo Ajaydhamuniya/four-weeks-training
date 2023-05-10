@@ -1,10 +1,31 @@
-﻿namespace Circle
+﻿using System;
+class Circle
 {
-    internal class Program
+    public double Radius { get; set; }
+
+    public Circle(double radius)
     {
-        static void Main(string[] args)
-        {
-            // Create a Circle object and display its area and circumference
-        }
+        Radius = radius;
     }
+    public double GetArea()
+    {
+        return Math.PI * Math.Pow(Radius, 2);
+    }
+
+    public double GetCircumference()
+    {
+        return 2 * Math.PI * Radius;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Circle circle = new Circle(5);
+        Console.WriteLine($"Circle with radius {circle.Radius}");
+        Console.WriteLine($"Area: {circle.GetArea()}");
+        Console.WriteLine($"Circumference: {circle.GetCircumference()}");
+    }
+
 }
