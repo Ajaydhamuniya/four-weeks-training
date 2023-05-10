@@ -27,6 +27,8 @@
             RunTestcase3();
             RunTestcase4();
             RunTestcase5();
+            Console.WriteLine("press any key");
+            Console.ReadKey();
 
         }
 
@@ -223,7 +225,7 @@
                 visited[i] = false;
             }
 
-            distances[source] = int.MinValue;
+            distances[source] =  0; //when source are already on source it becomes zero
 
             for (int count = 0; count < vertices - 1; count++)
             {
