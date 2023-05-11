@@ -50,14 +50,22 @@ namespace StackApp
                 {
                     Console.WriteLine("Stack is Empty");
                 }
-                Console.WriteLine($"{Stack.count}");
+
+                if(stack2.Count<= 0)
+                {
+                    Console.WriteLine("string stack is empty");
+
+
+
+                }
+
                 //ICustomStack<int> intStack = new CustomStack<int>();
                 //intStack.Push(1);
                 //intStack.Push(2);
                 //intStack.Push(3);
                 //Console.WriteLine(intStack.Pop()); // Output: 3
                 //Console.WriteLine(intStack.Pop()); // Output: 2
-
+            
                 //Console.WriteLine(Stack.IsEmpty()) ; // Output: False
             }
         }
