@@ -39,10 +39,10 @@
 
 
             CustomStack<string> stack2 = new CustomStack<string>();
-            stack2.Push("ajay");
-            stack2.Push("hrithik");
-            stack2.Push("rahul");
-            stack2.Push("sanu");
+            stack2.Push("xyz");
+            stack2.Push("abc");
+            stack2.Push("def");
+            stack2.Push("ghi");
 
             Console.WriteLine(stack2.Pop());
             Console.WriteLine(stack2.Pop());
