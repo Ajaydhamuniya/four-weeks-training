@@ -24,6 +24,7 @@ class Program
                                    .ThenBy(p => p.FirstName);
         foreach (var person in filteredPeople)
         {
+
             Console.WriteLine($"Name: {person.FirstName} {person.LastName}, Age: {person.Age}");
         }
     }
